@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\UnityProjects\Applesauce-WWise\</ProjectRoot>
+		<SourceFilesRoot>C:\UnityProjects\Applesauce-WWise\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\UnityProjects\Applesauce-WWise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\UnityProjects\Applesauce-WWise\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1031089514" Language="SFX" Hash="2937418004">
+			<ObjectPath>\SoundBanks\Default Work Unit\Debug</ObjectPath>
+			<ShortName>Debug</ShortName>
+			<Path>Debug.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
