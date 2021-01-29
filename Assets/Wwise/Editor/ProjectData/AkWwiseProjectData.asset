@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 61d5124e561fff4e9fe32542145b65c9
     GuidInternal: 
-    m_lastTime: -8585897087208053724
+    m_lastTime: -8585897077134318154
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -49,8 +49,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8a78be9575dc41478a1eed8d12ae1ab4
     GuidInternal: 
-    m_lastTime: -8585897087208482577
-    List: []
+    m_lastTime: -8585897077134288231
+    List:
+    - name: Debug
+      guid: af156219e1ee7640bff7623bad375ce8
+      id: 1031089514
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Debug
+        ObjectType: 7
+      Path: Default Work Unit\Debug
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
