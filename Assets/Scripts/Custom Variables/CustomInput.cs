@@ -41,6 +41,7 @@ public class CustomInput : MonoBehaviour
     private void OnEnable()
     {
         m_intput.Player.Move.Enable();
+        m_intput.Player.Mouse.Enable();
 
         m_intput.Player.Jump.Enable();
         m_intput.Player.Sprint.Enable();
@@ -58,6 +59,7 @@ public class CustomInput : MonoBehaviour
     private void OnDisable()
     {
         m_intput.Player.Move.Disable();
+        m_intput.Player.Mouse.Disable();
 
         m_intput.Player.Jump.Disable();
         m_intput.Player.Sprint.Disable();
@@ -80,6 +82,8 @@ public class CustomInput : MonoBehaviour
     {
         m_axisVal[(int)INPUT_AXIS.HORIZONTAL] = m_intput.Player.Move.ReadValue<Vector2>().x;
         m_axisVal[(int)INPUT_AXIS.VERTICAL] = m_intput.Player.Move.ReadValue<Vector2>().y;
+        m_axisVal[(int)INPUT_AXIS.MOUSE_X] = m_intput.Player.Mouse.ReadValue<Vector2>().x;
+        m_axisVal[(int)INPUT_AXIS.MOUSE_Y] = m_intput.Player.Mouse.ReadValue<Vector2>().y;
 
         m_keyVal[(int)INPUT_KEY.JUMP] = DetermineInputState(m_intput.Player.Jump.triggered, m_intput.Player.Jump.ReadValue<float>());
         m_keyVal[(int)INPUT_KEY.SPRINT] = DetermineInputState(m_intput.Player.Sprint.triggered, m_intput.Player.Sprint.ReadValue<float>());

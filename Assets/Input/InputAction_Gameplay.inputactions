@@ -14,6 +14,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "Mouse",
+                    "type": "Value",
+                    "id": "6419f47c-5581-4fd4-aa4a-92460c51dc35",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "a0727931-5bf9-4e88-b308-bfce72f9c916",
@@ -408,6 +416,17 @@
                     "processors": "",
                     "groups": "Controller",
                     "action": "Parry",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d7a6878-1305-4e7a-b5b0-1d10220e367e",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Mouse",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
