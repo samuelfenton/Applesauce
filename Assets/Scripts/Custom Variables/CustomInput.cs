@@ -10,7 +10,7 @@ public class CustomInput : MonoBehaviour
 
     public bool m_inverted = false;
 
-    public enum INPUT_KEY {JUMP, SPRINT, DASH, BLOCK, PARRY, LIGHT_ATTACK, HEAVY_ATTACK, ALT_ATTACK, INTERACT, CAMERA_FLIP, MENU, KEY_COUNT };
+    public enum INPUT_KEY {RELOAD, ATTACK, INTERACT, MENU, KEY_COUNT };
     
     public enum INPUT_STATE { UP, DOWN, DOWNED };
 
@@ -43,16 +43,9 @@ public class CustomInput : MonoBehaviour
         m_intput.Player.Move.Enable();
         m_intput.Player.Mouse.Enable();
 
-        m_intput.Player.Jump.Enable();
-        m_intput.Player.Sprint.Enable();
-        m_intput.Player.Dash.Enable();
-        m_intput.Player.Block.Enable();
-        m_intput.Player.Parry.Enable();
-        m_intput.Player.LightAttack.Enable();
-        m_intput.Player.HeavyAttack.Enable();
-        m_intput.Player.AltAttack.Enable();
+        m_intput.Player.Reload.Enable();
+        m_intput.Player.Attack.Enable();
         m_intput.Player.Interact.Enable();
-        m_intput.Player.CameraFlip.Enable();
         m_intput.Player.Menu.Enable();
     }
 
@@ -61,16 +54,9 @@ public class CustomInput : MonoBehaviour
         m_intput.Player.Move.Disable();
         m_intput.Player.Mouse.Disable();
 
-        m_intput.Player.Jump.Disable();
-        m_intput.Player.Sprint.Disable();
-        m_intput.Player.Dash.Disable();
-        m_intput.Player.Block.Disable();
-        m_intput.Player.Parry.Disable();
-        m_intput.Player.LightAttack.Disable();
-        m_intput.Player.HeavyAttack.Disable();
-        m_intput.Player.AltAttack.Disable();
+        m_intput.Player.Reload.Disable();
+        m_intput.Player.Attack.Disable();
         m_intput.Player.Interact.Disable();
-        m_intput.Player.CameraFlip.Disable();
         m_intput.Player.Menu.Disable();
     }
 
@@ -85,16 +71,10 @@ public class CustomInput : MonoBehaviour
         m_axisVal[(int)INPUT_AXIS.MOUSE_X] = m_intput.Player.Mouse.ReadValue<Vector2>().x;
         m_axisVal[(int)INPUT_AXIS.MOUSE_Y] = m_intput.Player.Mouse.ReadValue<Vector2>().y;
 
-        m_keyVal[(int)INPUT_KEY.JUMP] = DetermineInputState(m_intput.Player.Jump.triggered, m_intput.Player.Jump.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.SPRINT] = DetermineInputState(m_intput.Player.Sprint.triggered, m_intput.Player.Sprint.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.DASH] = DetermineInputState(m_intput.Player.Dash.triggered, m_intput.Player.Dash.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.BLOCK] = DetermineInputState(m_intput.Player.Block.triggered, m_intput.Player.Block.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.PARRY] = DetermineInputState(m_intput.Player.Parry.triggered, m_intput.Player.Parry.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.LIGHT_ATTACK] = DetermineInputState(m_intput.Player.LightAttack.triggered, m_intput.Player.LightAttack.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.HEAVY_ATTACK] = DetermineInputState(m_intput.Player.HeavyAttack.triggered, m_intput.Player.HeavyAttack.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.ALT_ATTACK] = DetermineInputState(m_intput.Player.AltAttack.triggered, m_intput.Player.AltAttack.ReadValue<float>());
+        
+        m_keyVal[(int)INPUT_KEY.RELOAD] = DetermineInputState(m_intput.Player.Reload.triggered, m_intput.Player.Reload.ReadValue<float>());
+        m_keyVal[(int)INPUT_KEY.ATTACK] = DetermineInputState(m_intput.Player.Attack.triggered, m_intput.Player.Attack.ReadValue<float>());
         m_keyVal[(int)INPUT_KEY.INTERACT] = DetermineInputState(m_intput.Player.Interact.triggered, m_intput.Player.Interact.ReadValue<float>());
-        m_keyVal[(int)INPUT_KEY.CAMERA_FLIP] = DetermineInputState(m_intput.Player.CameraFlip.triggered, m_intput.Player.CameraFlip.ReadValue<float>());
         m_keyVal[(int)INPUT_KEY.MENU] = DetermineInputState(m_intput.Player.Menu.triggered, m_intput.Player.Menu.ReadValue<float>());
     }
 
@@ -191,9 +171,7 @@ public class CustomInput : MonoBehaviour
     /// <returns>If any value is positive</returns>
     public bool AnyInput()
     {
-        return GetAxisBool(INPUT_AXIS.HORIZONTAL) || GetAxisBool(INPUT_AXIS.VERTICAL) || GetKeyBool(INPUT_KEY.JUMP) || 
-            GetKeyBool(INPUT_KEY.SPRINT) || GetKeyBool(INPUT_KEY.DASH) || GetKeyBool(INPUT_KEY.BLOCK) || 
-            GetKeyBool(INPUT_KEY.PARRY) || GetKeyBool(INPUT_KEY.LIGHT_ATTACK) || GetKeyBool(INPUT_KEY.HEAVY_ATTACK) || 
-            GetKeyBool(INPUT_KEY.ALT_ATTACK) || GetKeyBool(INPUT_KEY.INTERACT);
+        return GetAxisBool(INPUT_AXIS.HORIZONTAL) || GetAxisBool(INPUT_AXIS.VERTICAL) || GetKeyBool(INPUT_KEY.RELOAD) || 
+            GetKeyBool(INPUT_KEY.ATTACK) || GetKeyBool(INPUT_KEY.INTERACT);
     }
 }

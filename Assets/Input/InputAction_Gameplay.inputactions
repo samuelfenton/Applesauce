@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Jump",
+                    "name": "Reload",
                     "type": "Button",
                     "id": "a0727931-5bf9-4e88-b308-bfce72f9c916",
                     "expectedControlType": "Button",
@@ -30,57 +30,9 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Sprint",
-                    "type": "Button",
-                    "id": "3496650b-27aa-4411-ac50-491806a978ff",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Dash",
-                    "type": "Button",
-                    "id": "7b46a23f-20ae-4e45-95e6-100b87bc5755",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Block",
-                    "type": "Button",
-                    "id": "d369dcfc-0e7b-4d80-bc62-001e58f359fc",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Hold"
-                },
-                {
-                    "name": "Parry",
-                    "type": "Button",
-                    "id": "3b533fd0-166f-4f05-b944-851d8b9722ad",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Tap"
-                },
-                {
-                    "name": "LightAttack",
+                    "name": "Attack",
                     "type": "Button",
                     "id": "5e4b3406-5e6d-4681-a3d6-6480c7c58784",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "HeavyAttack",
-                    "type": "Button",
-                    "id": "07495be6-43f0-421b-a954-762fc7f2e842",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "AltAttack",
-                    "type": "Button",
-                    "id": "01759b6e-60be-4134-969c-8a6e1cef6a31",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -89,14 +41,6 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "1afe4108-ccba-4da5-8d78-9efc1ff3a403",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "CameraFlip",
-                    "type": "Button",
-                    "id": "6da3b2f7-becd-4b46-9157-47bd2b540b10",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -180,77 +124,11 @@
                 {
                     "name": "",
                     "id": "86d9d2aa-006b-47c2-96d9-42c2d642fc34",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7cbda498-bfc4-4533-a103-d15c9b5aa378",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "43959643-68bc-4092-93af-5b305cc65ea9",
-                    "path": "<Gamepad>/leftStickPress",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "Sprint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2576ae6c-fbda-40b1-8ce2-05935388b2b2",
-                    "path": "<Keyboard>/leftCtrl",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "deb02e81-b426-4bed-9919-4a855d05a97c",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "Dash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "49f7fc8e-2448-4461-94b2-f3b1bef5037f",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Block",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a3a69fe0-6148-4052-8db1-1a58ff3c5705",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "Block",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -261,7 +139,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "LightAttack",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -272,51 +150,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller",
-                    "action": "LightAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1ca98a88-39cf-48e0-997e-4d3934ec9e37",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "HeavyAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "576ffe0a-7c52-4467-ad10-f97dc7375445",
-                    "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "HeavyAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bfcd2f27-f929-453b-beb4-9d547e2662f5",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "AltAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b2b06dc4-46e1-4337-b1b4-1b7e527808a9",
-                    "path": "<Gamepad>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "AltAttack",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -339,28 +173,6 @@
                     "processors": "",
                     "groups": "Controller",
                     "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bc2cfce4-9eac-492f-960d-166c3a1321bd",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "CameraFlip",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e4c1f1a4-4610-45f2-a014-db353c10d5e8",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "Press",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "CameraFlip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -393,29 +205,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7014b0e4-0e5b-4af4-8dd7-db88e1f56cee",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Parry",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6145d6c5-2082-43be-9910-a765297f0db7",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Controller",
-                    "action": "Parry",
+                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

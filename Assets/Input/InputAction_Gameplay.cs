@@ -35,7 +35,7 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""Reload"",
                     ""type"": ""Button"",
                     ""id"": ""a0727931-5bf9-4e88-b308-bfce72f9c916"",
                     ""expectedControlType"": ""Button"",
@@ -43,57 +43,9 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Sprint"",
-                    ""type"": ""Button"",
-                    ""id"": ""3496650b-27aa-4411-ac50-491806a978ff"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Dash"",
-                    ""type"": ""Button"",
-                    ""id"": ""7b46a23f-20ae-4e45-95e6-100b87bc5755"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Block"",
-                    ""type"": ""Button"",
-                    ""id"": ""d369dcfc-0e7b-4d80-bc62-001e58f359fc"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Hold""
-                },
-                {
-                    ""name"": ""Parry"",
-                    ""type"": ""Button"",
-                    ""id"": ""3b533fd0-166f-4f05-b944-851d8b9722ad"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Tap""
-                },
-                {
-                    ""name"": ""LightAttack"",
+                    ""name"": ""Attack"",
                     ""type"": ""Button"",
                     ""id"": ""5e4b3406-5e6d-4681-a3d6-6480c7c58784"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""HeavyAttack"",
-                    ""type"": ""Button"",
-                    ""id"": ""07495be6-43f0-421b-a954-762fc7f2e842"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""AltAttack"",
-                    ""type"": ""Button"",
-                    ""id"": ""01759b6e-60be-4134-969c-8a6e1cef6a31"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -102,14 +54,6 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""1afe4108-ccba-4da5-8d78-9efc1ff3a403"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""CameraFlip"",
-                    ""type"": ""Button"",
-                    ""id"": ""6da3b2f7-becd-4b46-9157-47bd2b540b10"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -193,77 +137,11 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""86d9d2aa-006b-47c2-96d9-42c2d642fc34"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""7cbda498-bfc4-4533-a103-d15c9b5aa378"",
-                    ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Sprint"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""43959643-68bc-4092-93af-5b305cc65ea9"",
-                    ""path"": ""<Gamepad>/leftStickPress"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Controller"",
-                    ""action"": ""Sprint"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2576ae6c-fbda-40b1-8ce2-05935388b2b2"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Dash"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""deb02e81-b426-4bed-9919-4a855d05a97c"",
-                    ""path"": ""<Gamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Controller"",
-                    ""action"": ""Dash"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""49f7fc8e-2448-4461-94b2-f3b1bef5037f"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Block"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a3a69fe0-6148-4052-8db1-1a58ff3c5705"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Controller"",
-                    ""action"": ""Block"",
+                    ""action"": ""Reload"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -274,7 +152,7 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""LightAttack"",
+                    ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -285,51 +163,7 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Controller"",
-                    ""action"": ""LightAttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""1ca98a88-39cf-48e0-997e-4d3934ec9e37"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""HeavyAttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""576ffe0a-7c52-4467-ad10-f97dc7375445"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Controller"",
-                    ""action"": ""HeavyAttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bfcd2f27-f929-453b-beb4-9d547e2662f5"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""AltAttack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b2b06dc4-46e1-4337-b1b4-1b7e527808a9"",
-                    ""path"": ""<Gamepad>/leftTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Controller"",
-                    ""action"": ""AltAttack"",
+                    ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -352,28 +186,6 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""Controller"",
                     ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bc2cfce4-9eac-492f-960d-166c3a1321bd"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""CameraFlip"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e4c1f1a4-4610-45f2-a014-db353c10d5e8"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": ""Controller"",
-                    ""action"": ""CameraFlip"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -406,29 +218,7 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Controller"",
-                    ""action"": ""Jump"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""7014b0e4-0e5b-4af4-8dd7-db88e1f56cee"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Parry"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""6145d6c5-2082-43be-9910-a765297f0db7"",
-                    ""path"": ""<Gamepad>/buttonEast"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Controller"",
-                    ""action"": ""Parry"",
+                    ""action"": ""Reload"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -486,16 +276,9 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Mouse = m_Player.FindAction("Mouse", throwIfNotFound: true);
-        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
-        m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
-        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
-        m_Player_Block = m_Player.FindAction("Block", throwIfNotFound: true);
-        m_Player_Parry = m_Player.FindAction("Parry", throwIfNotFound: true);
-        m_Player_LightAttack = m_Player.FindAction("LightAttack", throwIfNotFound: true);
-        m_Player_HeavyAttack = m_Player.FindAction("HeavyAttack", throwIfNotFound: true);
-        m_Player_AltAttack = m_Player.FindAction("AltAttack", throwIfNotFound: true);
+        m_Player_Reload = m_Player.FindAction("Reload", throwIfNotFound: true);
+        m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
-        m_Player_CameraFlip = m_Player.FindAction("CameraFlip", throwIfNotFound: true);
         m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
@@ -550,16 +333,9 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Mouse;
-    private readonly InputAction m_Player_Jump;
-    private readonly InputAction m_Player_Sprint;
-    private readonly InputAction m_Player_Dash;
-    private readonly InputAction m_Player_Block;
-    private readonly InputAction m_Player_Parry;
-    private readonly InputAction m_Player_LightAttack;
-    private readonly InputAction m_Player_HeavyAttack;
-    private readonly InputAction m_Player_AltAttack;
+    private readonly InputAction m_Player_Reload;
+    private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_Interact;
-    private readonly InputAction m_Player_CameraFlip;
     private readonly InputAction m_Player_Menu;
     public struct PlayerActions
     {
@@ -567,16 +343,9 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
         public PlayerActions(@InputAction_Gameplay wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Mouse => m_Wrapper.m_Player_Mouse;
-        public InputAction @Jump => m_Wrapper.m_Player_Jump;
-        public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
-        public InputAction @Dash => m_Wrapper.m_Player_Dash;
-        public InputAction @Block => m_Wrapper.m_Player_Block;
-        public InputAction @Parry => m_Wrapper.m_Player_Parry;
-        public InputAction @LightAttack => m_Wrapper.m_Player_LightAttack;
-        public InputAction @HeavyAttack => m_Wrapper.m_Player_HeavyAttack;
-        public InputAction @AltAttack => m_Wrapper.m_Player_AltAttack;
+        public InputAction @Reload => m_Wrapper.m_Player_Reload;
+        public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
-        public InputAction @CameraFlip => m_Wrapper.m_Player_CameraFlip;
         public InputAction @Menu => m_Wrapper.m_Player_Menu;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -593,36 +362,15 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                 @Mouse.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouse;
                 @Mouse.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouse;
                 @Mouse.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouse;
-                @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Sprint.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
-                @Sprint.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
-                @Sprint.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
-                @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
-                @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
-                @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
-                @Block.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBlock;
-                @Block.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBlock;
-                @Block.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBlock;
-                @Parry.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnParry;
-                @Parry.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnParry;
-                @Parry.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnParry;
-                @LightAttack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLightAttack;
-                @LightAttack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLightAttack;
-                @LightAttack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLightAttack;
-                @HeavyAttack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHeavyAttack;
-                @HeavyAttack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHeavyAttack;
-                @HeavyAttack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHeavyAttack;
-                @AltAttack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAltAttack;
-                @AltAttack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAltAttack;
-                @AltAttack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAltAttack;
+                @Reload.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
+                @Reload.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
+                @Reload.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReload;
+                @Attack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
+                @Attack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
+                @Attack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
                 @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
-                @CameraFlip.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCameraFlip;
-                @CameraFlip.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCameraFlip;
-                @CameraFlip.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCameraFlip;
                 @Menu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
                 @Menu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
                 @Menu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
@@ -636,36 +384,15 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
                 @Mouse.started += instance.OnMouse;
                 @Mouse.performed += instance.OnMouse;
                 @Mouse.canceled += instance.OnMouse;
-                @Jump.started += instance.OnJump;
-                @Jump.performed += instance.OnJump;
-                @Jump.canceled += instance.OnJump;
-                @Sprint.started += instance.OnSprint;
-                @Sprint.performed += instance.OnSprint;
-                @Sprint.canceled += instance.OnSprint;
-                @Dash.started += instance.OnDash;
-                @Dash.performed += instance.OnDash;
-                @Dash.canceled += instance.OnDash;
-                @Block.started += instance.OnBlock;
-                @Block.performed += instance.OnBlock;
-                @Block.canceled += instance.OnBlock;
-                @Parry.started += instance.OnParry;
-                @Parry.performed += instance.OnParry;
-                @Parry.canceled += instance.OnParry;
-                @LightAttack.started += instance.OnLightAttack;
-                @LightAttack.performed += instance.OnLightAttack;
-                @LightAttack.canceled += instance.OnLightAttack;
-                @HeavyAttack.started += instance.OnHeavyAttack;
-                @HeavyAttack.performed += instance.OnHeavyAttack;
-                @HeavyAttack.canceled += instance.OnHeavyAttack;
-                @AltAttack.started += instance.OnAltAttack;
-                @AltAttack.performed += instance.OnAltAttack;
-                @AltAttack.canceled += instance.OnAltAttack;
+                @Reload.started += instance.OnReload;
+                @Reload.performed += instance.OnReload;
+                @Reload.canceled += instance.OnReload;
+                @Attack.started += instance.OnAttack;
+                @Attack.performed += instance.OnAttack;
+                @Attack.canceled += instance.OnAttack;
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
-                @CameraFlip.started += instance.OnCameraFlip;
-                @CameraFlip.performed += instance.OnCameraFlip;
-                @CameraFlip.canceled += instance.OnCameraFlip;
                 @Menu.started += instance.OnMenu;
                 @Menu.performed += instance.OnMenu;
                 @Menu.canceled += instance.OnMenu;
@@ -720,16 +447,9 @@ public class @InputAction_Gameplay : IInputActionCollection, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnMouse(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
-        void OnSprint(InputAction.CallbackContext context);
-        void OnDash(InputAction.CallbackContext context);
-        void OnBlock(InputAction.CallbackContext context);
-        void OnParry(InputAction.CallbackContext context);
-        void OnLightAttack(InputAction.CallbackContext context);
-        void OnHeavyAttack(InputAction.CallbackContext context);
-        void OnAltAttack(InputAction.CallbackContext context);
+        void OnReload(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
-        void OnCameraFlip(InputAction.CallbackContext context);
         void OnMenu(InputAction.CallbackContext context);
     }
     public interface IUIActions

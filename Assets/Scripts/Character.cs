@@ -7,9 +7,9 @@ public class Character : Entity
     /// <summary>
     /// 
     /// </summary>
-    public override void Start()
+    public override void Init()
     {
-        base.Start();
+        base.Init();
     }
 
     /// <summary>

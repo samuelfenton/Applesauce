@@ -10,17 +10,26 @@ public class Entity : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    public virtual void Start()
+    public virtual void Init()
     {
         m_entityPhysics = gameObject.AddComponent<EntityPhysics>();
     }
 
     public virtual void Update()
     {
-        m_entityPhysics.UpdatePhysics();
+
     }
 
     public virtual void FixedUpdate()
+    {
+        m_entityPhysics.UpdatePhysics();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="p_connectingPortal"></param>
+    public void MovedThroughPortal(Portal p_connectingPortal)
     {
 
     }

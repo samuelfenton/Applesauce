@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EntityPhysics : MonoBehaviour
 {
-    private const float NORMAL_CALC_HEIGHT = 1.5f;
+    private const float NORMAL_CALC_HEIGHT = 2.0f;
 
-    private const float NORMAL_CALC_DISTANCE = 3.0f;
+    private const float NORMAL_CALC_DISTANCE = 4.0f;
     private const float NORMAL_CALC_FORWARD_DISTANCE = 0.5f;
     private const float NORMAL_CALC_RIGHT_DISTANCE = 0.5f;
 
