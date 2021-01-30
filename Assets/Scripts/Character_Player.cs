@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character_Player : MonoBehaviour
+public class Character_Player : Character
 {
     private CustomInput m_input = null;
 
@@ -13,16 +13,25 @@ public class Character_Player : MonoBehaviour
     public float m_rotSpeed = 30.0f;
 
 
-    private void Start()
+    /// <summary>
+    /// 
+    /// </summary>
+    public override void Start()
     {
+        base.Start();
+
         m_input = gameObject.AddComponent<CustomInput>();
     }
-
-    private void FixedUpdate()
+    /// <summary>
+    /// 
+    /// </summary>
+    public override void Update()
     {
+        base.Update();
+
         m_input.UpdateInput();
 
-        transform.Translate((transform.forward * m_input.GetAxis(CustomInput.INPUT_AXIS.VERTICAL) * m_forwardVelocity + transform.right * m_input.GetAxis(CustomInput.INPUT_AXIS.HORIZONTAL) * m_strafeVelocity) * Time.deltaTime, Space.World);
+        m_entityPhysics.Translate(transform.forward * m_input.GetAxis(CustomInput.INPUT_AXIS.VERTICAL) * m_forwardVelocity + transform.right * m_input.GetAxis(CustomInput.INPUT_AXIS.HORIZONTAL) * m_strafeVelocity);
         transform.Rotate(transform.up, m_input.GetAxis(CustomInput.INPUT_AXIS.MOUSE_X) * m_rotSpeed * Time.deltaTime);
     }
 }
