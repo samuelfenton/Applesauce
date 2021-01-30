@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    [HideInInspector]
     public EntityPhysics m_entityPhysics = null;
 
     /// <summary>

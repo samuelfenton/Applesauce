@@ -19,7 +19,7 @@ public class EntityPhysics : MonoBehaviour
 
     public void UpdatePhysics()
     {
-        SetUpDirection();
+        //SetUpDirection();
         SnapToGround();
     }
 
@@ -66,7 +66,10 @@ public class EntityPhysics : MonoBehaviour
 
     private void SnapToGround()
     {
-
+        if (Physics.Raycast(transform.position + transform.up * NORMAL_CALC_HEIGHT, -transform.up, out RaycastHit hitInfo, NORMAL_CALC_DISTANCE, CustomLayers.m_enviromentMask))
+        {
+            transform.position = hitInfo.point;
+        }
     }
 
     /// <summary>
@@ -75,6 +78,6 @@ public class EntityPhysics : MonoBehaviour
     /// <param name="p_velocity"></param>
     public void Translate(Vector3 p_velocity)
     {
-        transform.Translate(p_velocity * Time.deltaTime, Space.World);
+        m_rb.velocity = p_velocity;
     }
 }
