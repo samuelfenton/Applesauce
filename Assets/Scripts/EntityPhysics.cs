@@ -76,7 +76,7 @@ public class EntityPhysics : MonoBehaviour
     /// 
     /// </summary>
     /// <param name="p_velocity"></param>
-    public void Translate(Vector3 p_velocity)
+    public void SetVelocity(Vector3 p_velocity)
     {
         m_rb.velocity = p_velocity;
     }

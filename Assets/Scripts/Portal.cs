@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
+    private const string BREAK_ANIMATION = "Break";
+
     [HideInInspector]
     public Room m_parentRoom = null;
 
@@ -26,6 +28,8 @@ public class Portal : MonoBehaviour
 
     [HideInInspector]
     public bool m_portalBrokenFlag = false;
+
+    private Animator m_animator = null;
 
     /// <summary>
     /// Setup the portal
@@ -68,6 +72,8 @@ public class Portal : MonoBehaviour
         //plane stuff
         m_planeForwardVector = transform.forward;
         m_planeForwardVector = m_planeForwardVector.normalized;
+
+        m_animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -177,5 +183,14 @@ public class Portal : MonoBehaviour
         centerToPos = centerToPos.normalized;
 
         return Vector3.Dot(m_planeForwardVector, centerToPos) < 0.0f;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public void BreakPortal()
+    {
+        m_animator.Play(BREAK_ANIMATION);
+        m_portalBrokenFlag = true;
     }
 }

@@ -144,8 +144,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4177671896142627774}
   - component: {fileID: 8459421304778719450}
-  - component: {fileID: 1909076046947124682}
   - component: {fileID: 3536568170826559629}
+  - component: {fileID: 1909076046947124682}
   m_Layer: 8
   m_Name: Character_Player
   m_TagString: Player
@@ -185,24 +185,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1909076046947124682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8778569594413603337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35f38f921d4be481b9d58774b693afa8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_entityPhysics: {fileID: 0}
-  m_forwardVelocity: 10
-  m_strafeVelocity: 10
-  m_rotSpeed: 30
-  m_maxCurrentAmmo: 7
-  m_currentAmmo: 7
 --- !u!136 &3536568170826559629
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -217,6 +199,25 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &1909076046947124682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778569594413603337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35f38f921d4be481b9d58774b693afa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_entityPhysics: {fileID: 0}
+  m_currentRoom: {fileID: 0}
+  m_forwardVelocity: 10
+  m_strafeVelocity: 10
+  m_rotSpeed: 30
+  m_maxCurrentAmmo: 7
+  m_currentAmmo: 7
 --- !u!1001 &5016875233201737461
 PrefabInstance:
   m_ObjectHideFlags: 0

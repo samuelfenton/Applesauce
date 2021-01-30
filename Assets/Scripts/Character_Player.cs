@@ -20,10 +20,6 @@ public class Character_Player : Character
     [HideInInspector]
     public int m_currentAmmo = 7;
 
-    //Animator
-    private Animator m_animator = null;
-    private bool m_currentlyAnimating = false;
-
     /// <summary>
     /// 
     /// </summary>
@@ -33,10 +29,7 @@ public class Character_Player : Character
 
         m_input = gameObject.AddComponent<CustomInput>();
 
-        m_animator = GetComponentInChildren<Animator>();
-
         m_currentAmmo = m_maxCurrentAmmo;
-        m_currentlyAnimating = false;
 
         if (m_currentRoom == null)
         {
@@ -83,7 +76,7 @@ public class Character_Player : Character
 
         //Movement
 
-        m_entityPhysics.Translate(transform.forward * m_input.GetAxis(CustomInput.INPUT_AXIS.VERTICAL) * m_forwardVelocity + transform.right * m_input.GetAxis(CustomInput.INPUT_AXIS.HORIZONTAL) * m_strafeVelocity);
+        m_entityPhysics.SetVelocity(transform.forward * m_input.GetAxis(CustomInput.INPUT_AXIS.VERTICAL) * m_forwardVelocity + transform.right * m_input.GetAxis(CustomInput.INPUT_AXIS.HORIZONTAL) * m_strafeVelocity);
         transform.Rotate(transform.up, m_input.GetAxis(CustomInput.INPUT_AXIS.MOUSE_X) * m_rotSpeed * Time.deltaTime, Space.World);
     }
 
@@ -97,22 +90,7 @@ public class Character_Player : Character
 
     private void RaytraceBullet()
     {
-        Debug.Log("Fired");
-    }
 
-    private bool IsAnimationDone()
-    { 
-        if (m_animator == null )
-            return false;
-
-        return m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.80f;
-    }
-
-    private void PlayAnimation(string p_animationString)
-    {
-        m_animator.Play(p_animationString);
-
-        m_currentlyAnimating = true;
     }
 
     public override void SetCurrentRoom(Portal p_entertedIntoPortal, Room p_currentRoom)

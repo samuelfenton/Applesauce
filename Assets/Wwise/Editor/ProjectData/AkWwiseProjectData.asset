@@ -114,5 +114,6 @@ MonoBehaviour:
   - /Applesauce_WwiseProject
   - /Applesauce_WwiseProject/Events
   - /Applesauce_WwiseProject/SoundBanks
+  - /Applesauce_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
