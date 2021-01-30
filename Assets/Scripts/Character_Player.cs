@@ -24,8 +24,6 @@ public class Character_Player : Character
     private Animator m_animator = null;
     private bool m_currentlyAnimating = false;
 
-    public Room m_currentRoom = null;
-
     /// <summary>
     /// 
     /// </summary>
@@ -46,7 +44,7 @@ public class Character_Player : Character
             return;
         }
 
-        m_currentRoom.EnteredRoom(null);
+        SetCurrentRoom(null, m_currentRoom);
     }
 
     /// <summary>
@@ -117,10 +115,10 @@ public class Character_Player : Character
         m_currentlyAnimating = true;
     }
 
-    public void SetCurrentRoom(Portal p_entertedIntoPortal)
+    public override void SetCurrentRoom(Portal p_entertedIntoPortal, Room p_currentRoom)
     {
-        m_currentRoom.LeftRoom();
-        m_currentRoom = p_entertedIntoPortal.m_parentRoom;
-        m_currentRoom.EnteredRoom(p_entertedIntoPortal);
+        m_currentRoom.PlayerLeftRoom();
+        m_currentRoom = p_currentRoom;
+        m_currentRoom.PlayerEnteredRoom(p_entertedIntoPortal);
     }
 }

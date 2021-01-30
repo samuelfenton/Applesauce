@@ -33,7 +33,9 @@ public class PortalController : MonoBehaviour
 
         for (int portalIndex = 0; portalIndex < p_toBeConnectedPortals.Count; portalIndex++)
         {
-            if(!p_toBeConnectedPortals[portalIndex].m_portalBrokenFlag || p_toBeConnectedPortals[portalIndex] == p_currentPortal)//Dont change if broken or one just moved through
+            bool isPreviousPortal = p_currentPortal == null || p_toBeConnectedPortals[portalIndex] == p_currentPortal || p_toBeConnectedPortals[portalIndex] == p_currentPortal.m_connectedPortal;
+
+            if (!p_toBeConnectedPortals[portalIndex].m_portalBrokenFlag && !isPreviousPortal)//Dont change if broken or one just moved through
             {
                 p_toBeConnectedPortals[portalIndex].m_connectedPortal = null;
 

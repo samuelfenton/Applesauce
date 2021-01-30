@@ -505,6 +505,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Hallway
       objectReference: {fileID: 0}
+    - target: {fileID: 4719080616301875098, guid: dd7cbf505e09548b996744624dbd048c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148813844653451326, guid: dd7cbf505e09548b996744624dbd048c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5709025191463064772, guid: dd7cbf505e09548b996744624dbd048c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -647,19 +655,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 917758274006505094, guid: f825277c5f0644e09b5296c186e489d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9100001
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 917758274444351932, guid: f825277c5f0644e09b5296c186e489d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9100001
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 917758274539237950, guid: f825277c5f0644e09b5296c186e489d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9100001
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 917758274929269919, guid: f825277c5f0644e09b5296c186e489d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.91
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2223517038365619183, guid: f825277c5f0644e09b5296c186e489d0, type: 3}
       propertyPath: m_connectedPortal
@@ -687,7 +695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6900483825841991830, guid: f825277c5f0644e09b5296c186e489d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6900483825841991830, guid: f825277c5f0644e09b5296c186e489d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -738,9 +746,37 @@ PrefabInstance:
       propertyPath: m_connectedPortal
       value: 
       objectReference: {fileID: 2111498860}
+    - target: {fileID: 2154675998492192367, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2154675998492192367, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193660200548929664, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193660200548929664, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4636305619014419600, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
       propertyPath: m_Name
       value: Prefab_Room03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889248997135579030, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889248997135579030, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211231293100280885, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 6500119223522470236, guid: 17a460822e67748e7b91f7662dade04b, type: 3}
       propertyPath: m_connectedPortal
@@ -835,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4177671896142627774, guid: 5bef3fcdfbb39490ab2045b793092867, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4177671896142627774, guid: 5bef3fcdfbb39490ab2045b793092867, type: 3}
       propertyPath: m_LocalPosition.z

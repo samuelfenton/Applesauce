@@ -7,6 +7,8 @@ public class Entity : MonoBehaviour
     [HideInInspector]
     public EntityPhysics m_entityPhysics = null;
 
+    public Room m_currentRoom = null;
+
     /// <summary>
     /// 
     /// </summary>
@@ -32,5 +34,10 @@ public class Entity : MonoBehaviour
     public void MovedThroughPortal(Portal p_connectingPortal)
     {
 
+    }
+
+    public virtual void SetCurrentRoom(Portal p_entertedIntoPortal, Room p_currentRoom)
+    {
+        m_currentRoom = p_currentRoom;
     }
 }

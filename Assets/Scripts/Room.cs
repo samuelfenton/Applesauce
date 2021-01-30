@@ -23,14 +23,14 @@ public class Room : MonoBehaviour
         }
     }
 
-    public void EnteredRoom(Portal p_entertedFrom)
+    public void PlayerEnteredRoom(Portal p_entertedFrom)
     {
         IsActiveRoom = true;
 
         m_portalController.BuildConnections(m_portals, p_entertedFrom);
     }
 
-    public void LeftRoom()
+    public void PlayerLeftRoom()
     {
         IsActiveRoom = false;
     }

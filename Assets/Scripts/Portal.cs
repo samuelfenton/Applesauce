@@ -78,13 +78,13 @@ public class Portal : MonoBehaviour
         }
 
         //Loop through colliding entites
-
         for (int entityIndex = 0; entityIndex < m_collidingEntities.Count; entityIndex++)
         {
             Entity currentEntity = m_collidingEntities[entityIndex];
 
             if (MovedThroughWindow(currentEntity.transform.position))
             {
+
                 //Position
                 Matrix4x4 worldMatrix = m_connectedPortal.transform.localToWorldMatrix * transform.worldToLocalMatrix * currentEntity.transform.localToWorldMatrix;
 
@@ -99,12 +99,8 @@ public class Portal : MonoBehaviour
                 m_collidingEntities.RemoveAt(entityIndex);
                 entityIndex--;
 
-                //Check if this is the playe, if so update current room
-                Character_Player playerCharacter = currentEntity.GetComponent<Character_Player>();
-                if (playerCharacter != null)
-                {
-                    playerCharacter.SetCurrentRoom(m_connectedPortal);
-                }
+                //Update current room
+                currentEntity.SetCurrentRoom(m_connectedPortal, m_connectedPortal.m_parentRoom);
             }
         }
     }
