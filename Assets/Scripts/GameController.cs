@@ -26,6 +26,7 @@ public class GameController : MonoBehaviour
         m_roomEnd = FindObjectOfType<Room_EndRoom>();
 
         m_UI.SetActive(false);
+        m_WIN.SetActive(false);
     }
 
     public void PlayerMovedThroughPortal()
@@ -41,12 +42,9 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void Update()
+    public void TogglePauseMenu()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            m_UI.SetActive(!m_UI.activeSelf);
-        }
+        m_UI.SetActive(!m_UI.activeSelf);
     }
 
     public void Win()

@@ -91,7 +91,7 @@ public class Portal : MonoBehaviour
         {
             Entity currentEntity = m_collidingEntities[entityIndex];
 
-            if (MovedThroughWindow(currentEntity.transform.position))
+            if (MovedThroughWindow(currentEntity.transform.position) && m_connectedPortal != null)
             {
 
                 //Position

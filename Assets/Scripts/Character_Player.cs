@@ -54,6 +54,11 @@ public class Character_Player : Character
 
         m_input.UpdateInput();
 
+        if(m_input.GetKey(CustomInput.INPUT_KEY.MENU) == CustomInput.INPUT_STATE.DOWNED)
+        {
+            m_gameController.TogglePauseMenu();
+        }
+
         //States - Attack, reload
         if (m_currentlyAnimating)
         {

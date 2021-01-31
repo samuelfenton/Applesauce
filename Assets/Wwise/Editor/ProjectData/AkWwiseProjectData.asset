@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8a78be9575dc41478a1eed8d12ae1ab4
     GuidInternal: 
-    m_lastTime: -8585895394444775808
+    m_lastTime: -8585895349884775808
     List:
     - name: Main
       guid: 4725608460f3804dbecd53a61da02559
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: dc43ef03a6de6d40b4e9df31631c8bc1
     GuidInternal: 
-    m_lastTime: -8585895394444775808
+    m_lastTime: -8585895349904775808
     List:
     - name: Footstep
       guid: 2478168d93a02b46b73dfbbfabee4e70
@@ -133,6 +133,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events/Music.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Default Work Unit/Music
+    guid: a35769e668fdf546a3aeff1b14c17a98
+    GuidInternal: 
+    m_lastTime: -8585895349904775808
+    List:
+    - name: Ambience_Loop
+      guid: c19996ad6cedfe489cf72d43f2c7ed56
+      id: 2383429734
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Ambience_Loop
+        ObjectType: 3
+      Path: Default Work Unit/Music/Ambience_Loop
+      maxAttenuation: 0
+      maxDuration: 129.02567
+      minDuration: 129.02567
   - PhysicalPath: Events/Pistol.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -142,7 +167,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit/Pistol
     guid: fe178e8a7e2b5e489ab56457729cbfa0
     GuidInternal: 
-    m_lastTime: -8585895394444775808
+    m_lastTime: -8585895349904775808
     List:
     - name: Pistol_Empty
       guid: adfd05a8ecb3014f878be8d0f279f327
@@ -184,8 +209,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Pistol/Pistol_Reload
       maxAttenuation: 0
-      maxDuration: 1.264626
-      minDuration: 1.264626
+      maxDuration: 1.364626
+      minDuration: 1.364626
   - PhysicalPath: Events/Player.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
