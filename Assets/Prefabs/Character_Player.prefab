@@ -172,6 +172,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5991693876948546958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5286923185751389092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d07dd17b0fa4cc3ab68e059f221d2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8778569594413603337
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,7 +196,6 @@ GameObject:
   - component: {fileID: 8459421304778719450}
   - component: {fileID: 3536568170826559629}
   - component: {fileID: 1909076046947124682}
-  - component: {fileID: 1871933835772015973}
   - component: {fileID: 1959028239}
   m_Layer: 8
   m_Name: Character_Player
@@ -258,18 +269,6 @@ MonoBehaviour:
   m_rotSpeed: 30
   m_maxCurrentAmmo: 7
   m_currentAmmo: 7
---- !u!114 &1871933835772015973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8778569594413603337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01d07dd17b0fa4cc3ab68e059f221d2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1959028239
 MonoBehaviour:
   m_ObjectHideFlags: 0

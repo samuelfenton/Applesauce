@@ -1,0 +1,71 @@
+Event	ID	Name			Wwise Object Path	Notes
+	411135019	Pistol_Fire			\Default Work Unit\Pistol\Pistol_Fire	
+	1031558144	Enemy_Breathing			\Default Work Unit\Enemy\Enemy_Breathing	
+	1068215004	Pistol_Reload			\Default Work Unit\Pistol\Pistol_Reload	
+	1513352309	Enemy_Growl			\Default Work Unit\Enemy\Enemy_Growl	
+	1866025847	Footstep			\Default Work Unit\Footstep	
+	3439186225	Player_Breathing			\Default Work Unit\Player\Player_Breathing	
+	3481974498	Pistol_Empty			\Default Work Unit\Pistol\Pistol_Empty	
+	3588687593	Portal_Shatter			\Default Work Unit\Portal_Shatter	
+	3719100070	Player_Breathing_Fast			\Default Work Unit\Player\Player_Breathing_Fast	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	354267144	Terrain			\Default Work Unit\Footsteps\Terrain	
+	640949982	Speed			\Default Work Unit\Footsteps\Speed	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Terrain			
+	2654748154	Water	Terrain			
+	712161704	Run	Speed			
+	2108779966	Walk	Speed			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	46347241	Player_Breathing	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Breathing Slow_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Breathing		5424364
+	54167572	Pistol_Empty	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Player Dry Fire_10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Empty		26584
+	57405784	Player Gunshot 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Player Gunshot 2_10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Fire\Player Gunshot 2		110316
+	100016483	Water Walk 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 2		63908
+	125929144	Stone Walk 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 1		58856
+	136537730	Stone Run 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 8		49668
+	141194102	Stone Run 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 6		52424
+	155955263	Water Run 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 3		36808
+	161862593	Stone Walk 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 8		73552
+	182919169	Pistol_Reload	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Gun Reload _10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Reload		223144
+	198949424	Water Run 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 5		51508
+	216726931	Stone Run 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 4		53344
+	217746939	Creature Growl 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Creature Growl 3_10C4C929.wem		\Actor-Mixer Hierarchy\Enemy\Enemy_Growl\Creature Growl 3		721100
+	227760337	Stone Walk 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 5		45996
+	331034854	Stone Walk 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 4		45076
+	389754580	Stone Walk 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 2		60232
+	411869344	Water Run 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 2		58856
+	435049652	Player Gunshot 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Player Gunshot 5_10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Fire\Player Gunshot 5		176724
+	438460245	Stone Walk 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 3		57936
+	446973475	Creature Growl 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Creature Growl 4_10C4C929.wem		\Actor-Mixer Hierarchy\Enemy\Enemy_Growl\Creature Growl 4		509640
+	447125995	Creature Growl 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Creature Growl 5_10C4C929.wem		\Actor-Mixer Hierarchy\Enemy\Enemy_Growl\Creature Growl 5		960288
+	454244163	Water Run 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 8		51508
+	481327356	Enemy_Breathing	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Creature Idle - Breathing_10C4C929.wem		\Actor-Mixer Hierarchy\Enemy\Enemy_Breathing		6927780
+	506083400	Creature Growl 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Creature Growl 1_10C4C929.wem		\Actor-Mixer Hierarchy\Enemy\Enemy_Growl\Creature Growl 1		499244
+	536827652	Water Walk 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 5		60692
+	543595610	Stone Run 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 7		58856
+	578745345	Water Run 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 1		58856
+	588305647	Player Gunshot 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Player Gunshot 4_10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Fire\Player Gunshot 4		264840
+	596820594	Stone Walk 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 7		61612
+	600888418	Creature Growl 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Creature Growl 2_10C4C929.wem		\Actor-Mixer Hierarchy\Enemy\Enemy_Growl\Creature Growl 2		540840
+	642023048	Player Gunshot 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Player Gunshot 1_10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Fire\Player Gunshot 1		126508
+	671609706	Stone Run 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 3		36808
+	672018508	Player_Breathing_Fast	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Breathing Fast_10C4C929.wem		\Actor-Mixer Hierarchy\Player\Player_Breathing_Fast		2873488
+	694235814	Water Walk 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 6		62532
+	698148170	Water Run 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 6		52424
+	705129001	Water Walk 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 3		58856
+	718312626	Water Walk 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 8		73552
+	790193195	Portal_Shatter	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Portal Break_10C4C929.wem		\Actor-Mixer Hierarchy\Portal\Portal_Shatter		3704464
+	797253055	Water Walk 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 7		67584
+	829172270	Water Run 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 4		53344
+	833617942	Stone Run 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 1		58856
+	876367959	Water Walk 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 1		68500
+	886723126	Water Run 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 7		58856
+	901167762	Stone Run 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 2		52424
+	1000365624	Player Gunshot 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Player Gunshot 3_10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Fire\Player Gunshot 3		150452
+	1011863194	Stone Run 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 5		44160
+	1012415975	Water Walk 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Walk 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 4		45076
+	1061577426	Stone Walk 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 6		62532
+

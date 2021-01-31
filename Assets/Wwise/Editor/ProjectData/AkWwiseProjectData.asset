@@ -49,17 +49,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8a78be9575dc41478a1eed8d12ae1ab4
     GuidInternal: 
-    m_lastTime: -8585895470034775808
+    m_lastTime: -8585895394444775808
     List:
-    - name: Movement
-      guid: c0075d6f1117f445a35dba90e7846f64
-      id: 2129636626
+    - name: Main
+      guid: 4725608460f3804dbecd53a61da02559
+      id: 3161908922
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Movement
+      - ElementName: Main
         ObjectType: 7
-      Path: Default Work Unit/Movement
+      Path: Default Work Unit/Main
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -68,7 +68,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: dc43ef03a6de6d40b4e9df31631c8bc1
     GuidInternal: 
-    m_lastTime: -8585895470034775808
+    m_lastTime: -8585895394444775808
     List:
     - name: Footstep
       guid: 2478168d93a02b46b73dfbbfabee4e70
@@ -82,6 +82,149 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.416599
       minDuration: 0.208299
+    - name: Portal_Shatter
+      guid: 3e7404cad5e8fb468e63e9e022c23a68
+      id: 3588687593
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Portal_Shatter
+        ObjectType: 3
+      Path: Default Work Unit/Portal_Shatter
+      maxAttenuation: 0
+      maxDuration: 21
+      minDuration: 21
+  - PhysicalPath: Events/Enemy.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Enemy
+      ObjectType: 12
+    ParentPath: Default Work Unit/Enemy
+    guid: 5ac95871c62ec541b54a301e0af6077c
+    GuidInternal: 
+    m_lastTime: -8585895394444775808
+    List:
+    - name: Enemy_Breathing
+      guid: 24f78e158646ee47b1a4ff44c11ff7d3
+      id: 1031558144
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enemy
+        ObjectType: 12
+      - ElementName: Enemy_Breathing
+        ObjectType: 3
+      Path: Default Work Unit/Enemy/Enemy_Breathing
+      maxAttenuation: 0
+      maxDuration: 39.272766
+      minDuration: 39.272766
+    - name: Enemy_Growl
+      guid: 46f881764892fa498f88c3c60cc0db74
+      id: 1513352309
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enemy
+        ObjectType: 12
+      - ElementName: Enemy_Growl
+        ObjectType: 3
+      Path: Default Work Unit/Enemy/Enemy_Growl
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events/Pistol.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Pistol
+      ObjectType: 12
+    ParentPath: Default Work Unit/Pistol
+    guid: fe178e8a7e2b5e489ab56457729cbfa0
+    GuidInternal: 
+    m_lastTime: -8585895394444775808
+    List:
+    - name: Pistol_Empty
+      guid: adfd05a8ecb3014f878be8d0f279f327
+      id: 3481974498
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pistol
+        ObjectType: 12
+      - ElementName: Pistol_Empty
+        ObjectType: 3
+      Path: Default Work Unit/Pistol/Pistol_Empty
+      maxAttenuation: 0
+      maxDuration: 0.15034
+      minDuration: 0.15034
+    - name: Pistol_Fire
+      guid: c77d92f51fee344b916ffcf541812a73
+      id: 411135019
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pistol
+        ObjectType: 12
+      - ElementName: Pistol_Fire
+        ObjectType: 3
+      Path: Default Work Unit/Pistol/Pistol_Fire
+      maxAttenuation: 0
+      maxDuration: 1.500998
+      minDuration: 0.625011
+    - name: Pistol_Reload
+      guid: 5feb181cf94c3143be2e0a5b287bcae7
+      id: 1068215004
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pistol
+        ObjectType: 12
+      - ElementName: Pistol_Reload
+        ObjectType: 3
+      Path: Default Work Unit/Pistol/Pistol_Reload
+      maxAttenuation: 0
+      maxDuration: 1.264626
+      minDuration: 1.264626
+  - PhysicalPath: Events/Player.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Player
+      ObjectType: 12
+    ParentPath: Default Work Unit/Player
+    guid: f24041aeb61deb4f9c0be182181e4c27
+    GuidInternal: 
+    m_lastTime: -8585895394444775808
+    List:
+    - name: Player_Breathing
+      guid: 9370d50253e3424ea6152afe68e65c4f
+      id: 3439186225
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 12
+      - ElementName: Player_Breathing
+        ObjectType: 3
+      Path: Default Work Unit/Player/Player_Breathing
+      maxAttenuation: 0
+      maxDuration: 30.75
+      minDuration: 30.75
+    - name: Player_Breathing_Fast
+      guid: e8d42fe68e85194f8418781b2bcad01d
+      id: 3719100070
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 12
+      - ElementName: Player_Breathing_Fast
+        ObjectType: 3
+      Path: Default Work Unit/Player/Player_Breathing_Fast
+      maxAttenuation: 0
+      maxDuration: 16.289251
+      minDuration: 16.289251
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -189,9 +332,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Applesauce_WwiseProject
-  - /Applesauce_WwiseProject/Events
-  - /Applesauce_WwiseProject/Events/Default Work Unit
-  - /Applesauce_WwiseProject/SoundBanks
-  - /Applesauce_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

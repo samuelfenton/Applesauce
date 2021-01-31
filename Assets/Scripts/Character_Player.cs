@@ -7,6 +7,8 @@ public class Character_Player : Character
     public const string RELOAD_STRING = "Reload";
     public const string ATTACK_STRING = "Attack";
 
+    public const string VELOCITY_VARIABLE = "Velocity";
+
     private CustomInput m_input = null;
     private Player_Sound m_playerSound = null;
 
@@ -29,7 +31,7 @@ public class Character_Player : Character
         base.Init();
 
         m_input = gameObject.AddComponent<CustomInput>();
-        m_playerSound = GetComponent<Player_Sound>();
+        m_playerSound = GetComponentInChildren<Player_Sound>();
 
         m_currentAmmo = m_maxCurrentAmmo;
 
@@ -62,24 +64,46 @@ public class Character_Player : Character
         }
         else
         {
-            if (m_currentAmmo > 0 && m_input.GetKey(CustomInput.INPUT_KEY.ATTACK) == CustomInput.INPUT_STATE.DOWNED)
+            if (m_input.GetKey(CustomInput.INPUT_KEY.ATTACK) == CustomInput.INPUT_STATE.DOWNED)
             {
-                m_currentAmmo--;
-                RaytraceBullet();
+                if(m_currentAmmo > 0)
+                {
+                    m_currentAmmo--;
+                    RaytraceBullet();
 
-                PlayAnimation(ATTACK_STRING);
+                    PlayAnimation(ATTACK_STRING);
+
+                    m_playerSound.PlayGunshot();
+                }
+                else //Dry Fire
+                {
+                    m_playerSound.PlayGunDryFire();
+                }
 
             }
             else if(m_input.GetKey(CustomInput.INPUT_KEY.RELOAD) == CustomInput.INPUT_STATE.DOWNED)
             {
                 m_currentAmmo = m_maxCurrentAmmo;
                 PlayAnimation(RELOAD_STRING);
+
+                m_playerSound.PlayGunReload();
             }
         }
 
         //Movement
 
-        m_entityPhysics.SetVelocity(transform.forward * m_input.GetAxis(CustomInput.INPUT_AXIS.VERTICAL) * m_forwardVelocity + transform.right * m_input.GetAxis(CustomInput.INPUT_AXIS.HORIZONTAL) * m_strafeVelocity);
+        float vertInput = m_input.GetAxis(CustomInput.INPUT_AXIS.VERTICAL);
+        float horiInput = m_input.GetAxis(CustomInput.INPUT_AXIS.HORIZONTAL);
+        if (Mathf.Abs(vertInput) < 0.5f && Mathf.Abs(horiInput) < 0.5f)
+        {
+            m_animator.SetFloat(VELOCITY_VARIABLE, 0.0f);
+        }
+        else
+        {
+            m_animator.SetFloat(VELOCITY_VARIABLE, 1.0f);
+        }
+
+        m_entityPhysics.SetVelocity(transform.forward * vertInput * m_forwardVelocity + transform.right * horiInput * m_strafeVelocity);
         transform.Rotate(transform.up, m_input.GetAxis(CustomInput.INPUT_AXIS.MOUSE_X) * m_rotSpeed * Time.deltaTime, Space.World);
     }
 
@@ -93,8 +117,6 @@ public class Character_Player : Character
 
     private void RaytraceBullet()
     {
-        m_playerSound.PlayGunshot();
-
         if (Physics.Raycast(transform.position + transform.up * 1.5f + transform.forward * 0.5f, transform.forward, out RaycastHit hit, 100.0f, ~CustomLayers.m_enviromentMask))//Raycast ignore the enviroment layer
         {
             Portal portalHit = hit.collider.GetComponent<Portal>();

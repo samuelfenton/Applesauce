@@ -16,11 +16,43 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2129636626" Language="SFX" Hash="40796635">
-			<ObjectPath>\SoundBanks\Default Work Unit\Movement</ObjectPath>
-			<ShortName>Movement</ShortName>
-			<Path>Movement.bnk</Path>
+		<SoundBank Id="3161908922" Language="SFX" Hash="263167937">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1031558144" Name="Enemy_Breathing" ObjectPath="\Events\Default Work Unit\Enemy\Enemy_Breathing" DurationType="OneShot" DurationMin="39.272766" DurationMax="39.272766">
+					<IncludedMemoryFiles>
+						<File Id="481327356" Language="SFX">
+							<ShortName>Creature Idle - Breathing.wav</ShortName>
+							<Path>SFX/Creature Idle - Breathing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1513352309" Name="Enemy_Growl" ObjectPath="\Events\Default Work Unit\Enemy\Enemy_Growl" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="217746939" Language="SFX">
+							<ShortName>Creature Growl 3.wav</ShortName>
+							<Path>SFX/Creature Growl 3_10C4C929.wem</Path>
+						</File>
+						<File Id="446973475" Language="SFX">
+							<ShortName>Creature Growl 4.wav</ShortName>
+							<Path>SFX/Creature Growl 4_10C4C929.wem</Path>
+						</File>
+						<File Id="447125995" Language="SFX">
+							<ShortName>Creature Growl 5.wav</ShortName>
+							<Path>SFX/Creature Growl 5_10C4C929.wem</Path>
+						</File>
+						<File Id="506083400" Language="SFX">
+							<ShortName>Creature Growl 1.wav</ShortName>
+							<Path>SFX/Creature Growl 1_10C4C929.wem</Path>
+						</File>
+						<File Id="600888418" Language="SFX">
+							<ShortName>Creature Growl 2.wav</ShortName>
+							<Path>SFX/Creature Growl 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.208299" DurationMax="0.416599">
 					<IncludedMemoryFiles>
 						<File Id="100016483" Language="SFX">
@@ -213,6 +245,70 @@
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="3481974498" Name="Pistol_Empty" ObjectPath="\Events\Default Work Unit\Pistol\Pistol_Empty" DurationType="OneShot" DurationMin="0.150340" DurationMax="0.150340">
+					<IncludedMemoryFiles>
+						<File Id="54167572" Language="SFX">
+							<ShortName>Player Dry Fire.wav</ShortName>
+							<Path>SFX/Player Dry Fire_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="411135019" Name="Pistol_Fire" ObjectPath="\Events\Default Work Unit\Pistol\Pistol_Fire" DurationType="OneShot" DurationMin="0.625011" DurationMax="1.500998">
+					<IncludedMemoryFiles>
+						<File Id="57405784" Language="SFX">
+							<ShortName>Player Gunshot 2.wav</ShortName>
+							<Path>SFX/Player Gunshot 2_10C4C929.wem</Path>
+						</File>
+						<File Id="435049652" Language="SFX">
+							<ShortName>Player Gunshot 5.wav</ShortName>
+							<Path>SFX/Player Gunshot 5_10C4C929.wem</Path>
+						</File>
+						<File Id="588305647" Language="SFX">
+							<ShortName>Player Gunshot 4.wav</ShortName>
+							<Path>SFX/Player Gunshot 4_10C4C929.wem</Path>
+						</File>
+						<File Id="642023048" Language="SFX">
+							<ShortName>Player Gunshot 1.wav</ShortName>
+							<Path>SFX/Player Gunshot 1_10C4C929.wem</Path>
+						</File>
+						<File Id="1000365624" Language="SFX">
+							<ShortName>Player Gunshot 3.wav</ShortName>
+							<Path>SFX/Player Gunshot 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1068215004" Name="Pistol_Reload" ObjectPath="\Events\Default Work Unit\Pistol\Pistol_Reload" DurationType="OneShot" DurationMin="1.264626" DurationMax="1.264626">
+					<IncludedMemoryFiles>
+						<File Id="182919169" Language="SFX">
+							<ShortName>Gun Reload .wav</ShortName>
+							<Path>SFX/Gun Reload _10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3439186225" Name="Player_Breathing" ObjectPath="\Events\Default Work Unit\Player\Player_Breathing" DurationType="OneShot" DurationMin="30.750000" DurationMax="30.750000">
+					<IncludedMemoryFiles>
+						<File Id="46347241" Language="SFX">
+							<ShortName>Breathing Slow.wav</ShortName>
+							<Path>SFX/Breathing Slow_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3719100070" Name="Player_Breathing_Fast" ObjectPath="\Events\Default Work Unit\Player\Player_Breathing_Fast" DurationType="OneShot" DurationMin="16.289251" DurationMax="16.289251">
+					<IncludedMemoryFiles>
+						<File Id="672018508" Language="SFX">
+							<ShortName>Breathing Fast.wav</ShortName>
+							<Path>SFX/Breathing Fast_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3588687593" Name="Portal_Shatter" ObjectPath="\Events\Default Work Unit\Portal_Shatter" DurationType="OneShot" DurationMin="21.000000" DurationMax="21.000000">
+					<IncludedMemoryFiles>
+						<File Id="790193195" Language="SFX">
+							<ShortName>Portal Break.wav</ShortName>
+							<Path>SFX/Portal Break_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<SwitchGroups>
