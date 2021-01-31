@@ -16,7 +16,7 @@ public class Room_EndRoom : Room
     {
         base.PlayerEnteredRoom(p_entertedFrom);
 
-        FindObjectOfType<GameController>().WinGame();
+        FindObjectOfType<GameController>().Win();
     }
 
     public override void PlayerLeftRoom()

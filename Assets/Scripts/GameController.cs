@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameController : MonoBehaviour
     private int m_spawnEnemyAtCount = 5;
     private int m_spawnEndRoomAtCount = 15;
 
+    public GameObject m_UI = null;
+    public GameObject m_WIN = null;
+
     private void Start()
     {
         FindObjectOfType<PortalController>().InitPortalController();
@@ -20,6 +24,8 @@ public class GameController : MonoBehaviour
         m_characterEnemy.gameObject.SetActive(false);
 
         m_roomEnd = FindObjectOfType<Room_EndRoom>();
+
+        m_UI.SetActive(false);
     }
 
     public void PlayerMovedThroughPortal()
@@ -35,23 +41,21 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void ShowPauseMenu()
+    public void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            m_UI.SetActive(!m_UI.activeSelf);
+        }
     }
 
-    public void ClosePauseMenu()
+    public void Win()
     {
-
+        m_WIN.SetActive(true);
     }
 
-    public void ResetGame()
+    public void Death()
     {
-
-    }
-
-    public void WinGame()
-    {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

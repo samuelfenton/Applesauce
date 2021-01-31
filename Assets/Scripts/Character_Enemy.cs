@@ -56,6 +56,11 @@ public class Character_Enemy : Character
                     break;
         }
 
+        if(Vector3.Distance(transform.position, m_playerTarget.transform.position) < 1.0f)
+        {
+            m_gameController.Death();
+        }
+
     }
 
     /// <summary>

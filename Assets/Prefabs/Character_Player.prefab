@@ -346,6 +346,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Player_Mesh
       objectReference: {fileID: 0}
+    - target: {fileID: 8329008107835999982, guid: 1306f78545b1a4d9f9ea026f7502f7ca, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d098c24191b174944a2ca4913f4bfa7f, type: 2}
+    - target: {fileID: 8673970415773094152, guid: 1306f78545b1a4d9f9ea026f7502f7ca, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d8083bf76d03b4cfb83a2901401ca474, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1306f78545b1a4d9f9ea026f7502f7ca, type: 3}
 --- !u!1 &5286923185751389092 stripped
