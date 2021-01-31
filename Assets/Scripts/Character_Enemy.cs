@@ -32,6 +32,10 @@ public class Character_Enemy : Character
         m_playerTarget = FindObjectOfType<Character_Player>();
 
         m_currentState = ENEMY_STATE.IDLE;
+
+        AkSoundEngine.PostEvent("Enemy_Breathing", gameObject);
+        AkSoundEngine.PostEvent("Enemy_Growl", gameObject);
+
     }
 
     /// <summary>

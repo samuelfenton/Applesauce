@@ -50,6 +50,11 @@ public class GameController : MonoBehaviour
     public void TogglePauseMenu()
     {
         m_UI.SetActive(!m_UI.activeSelf);
+
+        if (m_UI.activeSelf)
+            Cursor.lockState = CursorLockMode.Confined;
+        else
+            Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void Win()
