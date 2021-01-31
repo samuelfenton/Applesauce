@@ -8,7 +8,7 @@ public class PortalController : MonoBehaviour
 
     private List<Portal> m_portals = new List<Portal>();
 
-    private void Start()
+    public void InitPortalController()
     {
         m_rooms.AddRange(FindObjectsOfType<Room>());
         m_portals.AddRange(FindObjectsOfType<Portal>());
@@ -33,7 +33,7 @@ public class PortalController : MonoBehaviour
 
         for (int portalIndex = 0; portalIndex < p_toBeConnectedPortals.Count; portalIndex++)
         {
-            bool isPreviousPortal = p_currentPortal == null || p_toBeConnectedPortals[portalIndex] == p_currentPortal || p_toBeConnectedPortals[portalIndex] == p_currentPortal.m_connectedPortal;
+            bool isPreviousPortal = p_currentPortal != null && (p_toBeConnectedPortals[portalIndex] == p_currentPortal || p_toBeConnectedPortals[portalIndex] == p_currentPortal.m_connectedPortal);
 
             if (!p_toBeConnectedPortals[portalIndex].m_portalBrokenFlag && !isPreviousPortal)//Dont change if broken or one just moved through
             {

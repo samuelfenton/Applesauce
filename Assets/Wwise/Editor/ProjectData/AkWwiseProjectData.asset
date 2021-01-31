@@ -49,17 +49,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8a78be9575dc41478a1eed8d12ae1ab4
     GuidInternal: 
-    m_lastTime: -8585896949104775808
+    m_lastTime: -8585895470034775808
     List:
-    - name: Debug
-      guid: af156219e1ee7640bff7623bad375ce8
-      id: 1031089514
+    - name: Movement
+      guid: c0075d6f1117f445a35dba90e7846f64
+      id: 2129636626
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Debug
+      - ElementName: Movement
         ObjectType: 7
-      Path: Default Work Unit/Debug
+      Path: Default Work Unit/Movement
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     PathAndIcons:
@@ -68,8 +68,20 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: dc43ef03a6de6d40b4e9df31631c8bc1
     GuidInternal: 
-    m_lastTime: -8585896949104775808
-    List: []
+    m_lastTime: -8585895470034775808
+    List:
+    - name: Footstep
+      guid: 2478168d93a02b46b73dfbbfabee4e70
+      id: 1866025847
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footstep
+        ObjectType: 3
+      Path: Default Work Unit/Footstep
+      maxAttenuation: 0
+      maxDuration: 0.416599
+      minDuration: 0.208299
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -98,8 +110,73 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2e4d87dc4da4e24387c8ecc0facf014c
     GuidInternal: 
-    m_lastTime: -8585896949104775808
+    m_lastTime: -8585895470034775808
     List: []
+  - PhysicalPath: Switches/Footsteps.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Footsteps
+      ObjectType: 12
+    ParentPath: Default Work Unit/Footsteps
+    guid: e04da92d9b8677409ecaf7dbd045c639
+    GuidInternal: 
+    m_lastTime: -8585895470034775808
+    List:
+    - name: Speed
+      guid: 0b7773c938a1564bac4bddab1ddf734b
+      id: 640949982
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 12
+      - ElementName: Speed
+        ObjectType: 11
+      Path: Default Work Unit/Footsteps/Speed
+      values:
+      - name: Run
+        guid: 391032078046bb41a9bd11387d7cd8df
+        id: 712161704
+        PathAndIcons:
+        - ElementName: Run
+          ObjectType: 10
+      - name: Walk
+        guid: 92e21cfc0f617946aea74b77e3282524
+        id: 2108779966
+        PathAndIcons:
+        - ElementName: Walk
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Terrain
+      guid: 924b406f666a044c8ec581d68318cbeb
+      id: 354267144
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 12
+      - ElementName: Terrain
+        ObjectType: 11
+      Path: Default Work Unit/Footsteps/Terrain
+      values:
+      - name: Stone
+        guid: e557f2559945e74ba9a081ba15948dc2
+        id: 1216965916
+        PathAndIcons:
+        - ElementName: Stone
+          ObjectType: 10
+      - name: Water
+        guid: 2387904a0ea5804bba7cefd1ae0d5037
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Water
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     PathAndIcons:
@@ -113,6 +190,7 @@ MonoBehaviour:
   ExpandedItems:
   - /Applesauce_WwiseProject
   - /Applesauce_WwiseProject/Events
+  - /Applesauce_WwiseProject/Events/Default Work Unit
   - /Applesauce_WwiseProject/SoundBanks
   - /Applesauce_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1

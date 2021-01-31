@@ -8,6 +8,7 @@ public class Character_Player : Character
     public const string ATTACK_STRING = "Attack";
 
     private CustomInput m_input = null;
+    private Player_Sound m_playerSound = null;
 
     [Header("Movement")]
     public float m_forwardVelocity = 10.0f;
@@ -28,6 +29,7 @@ public class Character_Player : Character
         base.Init();
 
         m_input = gameObject.AddComponent<CustomInput>();
+        m_playerSound = GetComponent<Player_Sound>();
 
         m_currentAmmo = m_maxCurrentAmmo;
 
@@ -37,7 +39,8 @@ public class Character_Player : Character
             return;
         }
 
-        SetCurrentRoom(null, m_currentRoom);
+        m_currentRoom.PlayerEnteredRoom(null);
+
     }
 
     /// <summary>
@@ -90,6 +93,8 @@ public class Character_Player : Character
 
     private void RaytraceBullet()
     {
+        m_playerSound.PlayGunshot();
+
         if (Physics.Raycast(transform.position + transform.up * 1.5f + transform.forward * 0.5f, transform.forward, out RaycastHit hit, 100.0f, ~CustomLayers.m_enviromentMask))//Raycast ignore the enviroment layer
         {
             Portal portalHit = hit.collider.GetComponent<Portal>();
@@ -111,5 +116,7 @@ public class Character_Player : Character
         m_currentRoom.PlayerLeftRoom();
         m_currentRoom = p_currentRoom;
         m_currentRoom.PlayerEnteredRoom(p_entertedIntoPortal);
+
+        m_gameController.PlayerMovedThroughPortal();
     }
 }

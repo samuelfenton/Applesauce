@@ -1,0 +1,47 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Footstep	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	354267144	Terrain			\Default Work Unit\Footsteps\Terrain	
+	640949982	Speed			\Default Work Unit\Footsteps\Speed	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Terrain			
+	2654748154	Water	Terrain			
+	712161704	Run	Speed			
+	2108779966	Walk	Speed			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	100016483	Water Walk 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 2		63908
+	125929144	Stone Walk 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 1		58856
+	136537730	Stone Run 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 8		49668
+	141194102	Stone Run 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 6		52424
+	155955263	Water Run 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 3		36808
+	161862593	Stone Walk 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 8		73552
+	198949424	Water Run 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 5		51508
+	216726931	Stone Run 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 4		53344
+	227760337	Stone Walk 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 5		45996
+	331034854	Stone Walk 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 4		45076
+	389754580	Stone Walk 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 2		60232
+	411869344	Water Run 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 2		58856
+	438460245	Stone Walk 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 3		57936
+	454244163	Water Run 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 8		51508
+	536827652	Water Walk 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 5		60692
+	543595610	Stone Run 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 7		58856
+	578745345	Water Run 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 1		58856
+	596820594	Stone Walk 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 7		61612
+	671609706	Stone Run 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 3		36808
+	694235814	Water Walk 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 6		62532
+	698148170	Water Run 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 6		52424
+	705129001	Water Walk 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 3_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 3		58856
+	718312626	Water Walk 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 8		73552
+	797253055	Water Walk 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 7		67584
+	829172270	Water Run 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 4		53344
+	833617942	Stone Run 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 1		58856
+	876367959	Water Walk 1	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 1_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 1		68500
+	886723126	Water Run 7	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Run 7_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 7		58856
+	901167762	Stone Run 2	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 2_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 2		52424
+	1011863194	Stone Run 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Run 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 5		44160
+	1012415975	Water Walk 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Puddle Walk 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Water\Water Walk 4		45076
+	1061577426	Stone Walk 6	Y:\Documents\GitHub\Applesauce-WWise\.cache\Mac\SFX\Stone Walk 6_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 6		62532
+

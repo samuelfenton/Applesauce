@@ -246,6 +246,7 @@ MonoBehaviour:
   m_portalWindow: {fileID: 5101941607033295565}
   m_portalCamera: {fileID: 7661672501760988818}
   m_connectedPortal: {fileID: 0}
+  m_defaultMaterial: {fileID: 2100000, guid: 55f3d049d99684e1cb1eb83f81124758, type: 2}
   m_onBreakMaterial: {fileID: 2100000, guid: 63c5a17bbec1e4c79b5c3a901ac2d172, type: 2}
   m_portalBrokenFlag: 0
 --- !u!65 &2728687654095167366

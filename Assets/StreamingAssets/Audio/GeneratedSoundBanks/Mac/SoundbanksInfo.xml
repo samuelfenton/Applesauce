@@ -1,25 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\UnityProjects\Applesauce-WWise\</ProjectRoot>
-		<SourceFilesRoot>C:\UnityProjects\Applesauce-WWise\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\UnityProjects\Applesauce-WWise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>/Users/ScottBoyd/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Applesauce-WWise/</ProjectRoot>
+		<SourceFilesRoot>/Users/ScottBoyd/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Applesauce-WWise/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/ScottBoyd/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Applesauce-WWise/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\UnityProjects\Applesauce-WWise\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/ScottBoyd/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Applesauce-WWise/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1031089514" Language="SFX" Hash="2937418004">
-			<ObjectPath>\SoundBanks\Default Work Unit\Debug</ObjectPath>
-			<ShortName>Debug</ShortName>
-			<Path>Debug.bnk</Path>
-		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2129636626" Language="SFX" Hash="40796635">
+			<ObjectPath>\SoundBanks\Default Work Unit\Movement</ObjectPath>
+			<ShortName>Movement</ShortName>
+			<Path>Movement.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" DurationType="OneShot" DurationMin="0.208299" DurationMax="0.416599">
+					<IncludedMemoryFiles>
+						<File Id="100016483" Language="SFX">
+							<ShortName>Puddle Walk 2.wav</ShortName>
+							<Path>SFX/Puddle Walk 2_10C4C929.wem</Path>
+						</File>
+						<File Id="125929144" Language="SFX">
+							<ShortName>Stone Walk 1.wav</ShortName>
+							<Path>SFX/Stone Walk 1_10C4C929.wem</Path>
+						</File>
+						<File Id="136537730" Language="SFX">
+							<ShortName>Stone Run 8.wav</ShortName>
+							<Path>SFX/Stone Run 8_10C4C929.wem</Path>
+						</File>
+						<File Id="141194102" Language="SFX">
+							<ShortName>Stone Run 6.wav</ShortName>
+							<Path>SFX/Stone Run 6_10C4C929.wem</Path>
+						</File>
+						<File Id="155955263" Language="SFX">
+							<ShortName>Puddle Run 3.wav</ShortName>
+							<Path>SFX/Puddle Run 3_10C4C929.wem</Path>
+						</File>
+						<File Id="161862593" Language="SFX">
+							<ShortName>Stone Walk 8.wav</ShortName>
+							<Path>SFX/Stone Walk 8_10C4C929.wem</Path>
+						</File>
+						<File Id="198949424" Language="SFX">
+							<ShortName>Puddle Run 5.wav</ShortName>
+							<Path>SFX/Puddle Run 5_10C4C929.wem</Path>
+						</File>
+						<File Id="216726931" Language="SFX">
+							<ShortName>Stone Run 4.wav</ShortName>
+							<Path>SFX/Stone Run 4_10C4C929.wem</Path>
+						</File>
+						<File Id="227760337" Language="SFX">
+							<ShortName>Stone Walk 5.wav</ShortName>
+							<Path>SFX/Stone Walk 5_10C4C929.wem</Path>
+						</File>
+						<File Id="331034854" Language="SFX">
+							<ShortName>Stone Walk 4.wav</ShortName>
+							<Path>SFX/Stone Walk 4_10C4C929.wem</Path>
+						</File>
+						<File Id="389754580" Language="SFX">
+							<ShortName>Stone Walk 2.wav</ShortName>
+							<Path>SFX/Stone Walk 2_10C4C929.wem</Path>
+						</File>
+						<File Id="411869344" Language="SFX">
+							<ShortName>Puddle Run 2.wav</ShortName>
+							<Path>SFX/Puddle Run 2_10C4C929.wem</Path>
+						</File>
+						<File Id="438460245" Language="SFX">
+							<ShortName>Stone Walk 3.wav</ShortName>
+							<Path>SFX/Stone Walk 3_10C4C929.wem</Path>
+						</File>
+						<File Id="454244163" Language="SFX">
+							<ShortName>Puddle Run 8.wav</ShortName>
+							<Path>SFX/Puddle Run 8_10C4C929.wem</Path>
+						</File>
+						<File Id="536827652" Language="SFX">
+							<ShortName>Puddle Walk 5.wav</ShortName>
+							<Path>SFX/Puddle Walk 5_10C4C929.wem</Path>
+						</File>
+						<File Id="543595610" Language="SFX">
+							<ShortName>Stone Run 7.wav</ShortName>
+							<Path>SFX/Stone Run 7_10C4C929.wem</Path>
+						</File>
+						<File Id="578745345" Language="SFX">
+							<ShortName>Puddle Run 1.wav</ShortName>
+							<Path>SFX/Puddle Run 1_10C4C929.wem</Path>
+						</File>
+						<File Id="596820594" Language="SFX">
+							<ShortName>Stone Walk 7.wav</ShortName>
+							<Path>SFX/Stone Walk 7_10C4C929.wem</Path>
+						</File>
+						<File Id="671609706" Language="SFX">
+							<ShortName>Stone Run 3.wav</ShortName>
+							<Path>SFX/Stone Run 3_10C4C929.wem</Path>
+						</File>
+						<File Id="694235814" Language="SFX">
+							<ShortName>Puddle Walk 6.wav</ShortName>
+							<Path>SFX/Puddle Walk 6_10C4C929.wem</Path>
+						</File>
+						<File Id="698148170" Language="SFX">
+							<ShortName>Puddle Run 6.wav</ShortName>
+							<Path>SFX/Puddle Run 6_10C4C929.wem</Path>
+						</File>
+						<File Id="705129001" Language="SFX">
+							<ShortName>Puddle Walk 3.wav</ShortName>
+							<Path>SFX/Puddle Walk 3_10C4C929.wem</Path>
+						</File>
+						<File Id="718312626" Language="SFX">
+							<ShortName>Puddle Walk 8.wav</ShortName>
+							<Path>SFX/Puddle Walk 8_10C4C929.wem</Path>
+						</File>
+						<File Id="797253055" Language="SFX">
+							<ShortName>Puddle Walk 7.wav</ShortName>
+							<Path>SFX/Puddle Walk 7_10C4C929.wem</Path>
+						</File>
+						<File Id="829172270" Language="SFX">
+							<ShortName>Puddle Run 4.wav</ShortName>
+							<Path>SFX/Puddle Run 4_10C4C929.wem</Path>
+						</File>
+						<File Id="833617942" Language="SFX">
+							<ShortName>Stone Run 1.wav</ShortName>
+							<Path>SFX/Stone Run 1_10C4C929.wem</Path>
+						</File>
+						<File Id="876367959" Language="SFX">
+							<ShortName>Puddle Walk 1.wav</ShortName>
+							<Path>SFX/Puddle Walk 1_10C4C929.wem</Path>
+						</File>
+						<File Id="886723126" Language="SFX">
+							<ShortName>Puddle Run 7.wav</ShortName>
+							<Path>SFX/Puddle Run 7_10C4C929.wem</Path>
+						</File>
+						<File Id="901167762" Language="SFX">
+							<ShortName>Stone Run 2.wav</ShortName>
+							<Path>SFX/Stone Run 2_10C4C929.wem</Path>
+						</File>
+						<File Id="1011863194" Language="SFX">
+							<ShortName>Stone Run 5.wav</ShortName>
+							<Path>SFX/Stone Run 5_10C4C929.wem</Path>
+						</File>
+						<File Id="1012415975" Language="SFX">
+							<ShortName>Puddle Walk 4.wav</ShortName>
+							<Path>SFX/Puddle Walk 4_10C4C929.wem</Path>
+						</File>
+						<File Id="1061577426" Language="SFX">
+							<ShortName>Stone Walk 6.wav</ShortName>
+							<Path>SFX/Stone Walk 6_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{FC1CE292-610F-4679-AEA7-4B77E3282524}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{07321039-4680-41BB-A9BD-11387D7CD8DF}">
+							<DefaultSwitchValue>{55F257E5-4599-4BE7-A9A0-81BA15948DC2}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{4A908723-A50E-4B80-BA7C-EFD1AE0D5037}">
+									<Media>
+										<File Id="155955263"/>
+										<File Id="198949424"/>
+										<File Id="411869344"/>
+										<File Id="454244163"/>
+										<File Id="578745345"/>
+										<File Id="698148170"/>
+										<File Id="829172270"/>
+										<File Id="886723126"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{55F257E5-4599-4BE7-A9A0-81BA15948DC2}">
+									<Media>
+										<File Id="136537730"/>
+										<File Id="141194102"/>
+										<File Id="216726931"/>
+										<File Id="543595610"/>
+										<File Id="671609706"/>
+										<File Id="833617942"/>
+										<File Id="901167762"/>
+										<File Id="1011863194"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FC1CE292-610F-4679-AEA7-4B77E3282524}">
+							<DefaultSwitchValue>{55F257E5-4599-4BE7-A9A0-81BA15948DC2}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{4A908723-A50E-4B80-BA7C-EFD1AE0D5037}">
+									<Media>
+										<File Id="100016483"/>
+										<File Id="536827652"/>
+										<File Id="694235814"/>
+										<File Id="705129001"/>
+										<File Id="718312626"/>
+										<File Id="797253055"/>
+										<File Id="876367959"/>
+										<File Id="1012415975"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{55F257E5-4599-4BE7-A9A0-81BA15948DC2}">
+									<Media>
+										<File Id="125929144"/>
+										<File Id="161862593"/>
+										<File Id="227760337"/>
+										<File Id="331034854"/>
+										<File Id="389754580"/>
+										<File Id="438460245"/>
+										<File Id="596820594"/>
+										<File Id="1061577426"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="354267144" Name="Terrain" ObjectPath="\Switches\Default Work Unit\Footsteps\Terrain">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Footsteps\Terrain\Stone"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\Footsteps\Terrain\Water"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="640949982" Name="Speed" ObjectPath="\Switches\Default Work Unit\Footsteps\Speed">
+					<Switches>
+						<Switch Id="712161704" Name="Run" ObjectPath="\Switches\Default Work Unit\Footsteps\Speed\Run"/>
+						<Switch Id="2108779966" Name="Walk" ObjectPath="\Switches\Default Work Unit\Footsteps\Speed\Walk"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

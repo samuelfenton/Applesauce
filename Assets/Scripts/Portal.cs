@@ -16,6 +16,7 @@ public class Portal : MonoBehaviour
 
     public Portal m_connectedPortal = null;
 
+    public Material m_defaultMaterial = null;
     public Material m_onBreakMaterial = null;
 
     private GameObject m_playerObj = null;
@@ -192,8 +193,6 @@ public class Portal : MonoBehaviour
     /// </summary>
     public void BreakPortal()
     {
-        //m_animator.Play(BREAK_ANIMATION);
-
         //Setup material
         MeshRenderer windowMeshRenderer = m_portalWindow.GetComponent<MeshRenderer>();
 
@@ -202,5 +201,20 @@ public class Portal : MonoBehaviour
         m_portalBrokenFlag = true;
 
         GetComponent<Collider>().isTrigger = false;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public void UnBreakPortal()
+    {
+        //Setup material
+        MeshRenderer windowMeshRenderer = m_portalWindow.GetComponent<MeshRenderer>();
+
+        windowMeshRenderer.material = m_defaultMaterial;
+
+        m_portalBrokenFlag = false;
+
+        GetComponent<Collider>().isTrigger = true;
     }
 }
