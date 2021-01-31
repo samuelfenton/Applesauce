@@ -16,11 +16,19 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="263167937">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2969935103">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2383429734" Name="Ambience_Loop" ObjectPath="\Events\Default Work Unit\Music\Ambience_Loop" DurationType="OneShot" DurationMin="129.025665" DurationMax="129.025665">
+					<IncludedMemoryFiles>
+						<File Id="214191590" Language="SFX">
+							<ShortName>Ambience_Soft.wav</ShortName>
+							<Path>SFX/Ambience_Soft_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1031558144" Name="Enemy_Breathing" ObjectPath="\Events\Default Work Unit\Enemy\Enemy_Breathing" DurationType="OneShot" DurationMin="39.272766" DurationMax="39.272766">
 					<IncludedMemoryFiles>
 						<File Id="481327356" Language="SFX">
@@ -278,7 +286,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1068215004" Name="Pistol_Reload" ObjectPath="\Events\Default Work Unit\Pistol\Pistol_Reload" DurationType="OneShot" DurationMin="1.264626" DurationMax="1.264626">
+				<Event Id="1068215004" Name="Pistol_Reload" ObjectPath="\Events\Default Work Unit\Pistol\Pistol_Reload" DurationType="OneShot" DurationMin="1.364626" DurationMax="1.364626">
 					<IncludedMemoryFiles>
 						<File Id="182919169" Language="SFX">
 							<ShortName>Gun Reload .wav</ShortName>

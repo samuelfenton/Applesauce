@@ -27,6 +27,9 @@ public class GameController : MonoBehaviour
 
         m_UI.SetActive(false);
         m_WIN.SetActive(false);
+
+        AkSoundEngine.PostEvent("Ambience_Loop", gameObject);
+
     }
 
     public void PlayerMovedThroughPortal()

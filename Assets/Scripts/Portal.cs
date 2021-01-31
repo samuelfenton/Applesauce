@@ -201,6 +201,8 @@ public class Portal : MonoBehaviour
         m_portalBrokenFlag = true;
 
         GetComponent<Collider>().isTrigger = false;
+
+        AkSoundEngine.PostEvent("Portal_Shatter", gameObject);        
     }
 
     /// <summary>

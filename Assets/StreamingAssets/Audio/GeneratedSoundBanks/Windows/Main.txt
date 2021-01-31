@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1068215004	Pistol_Reload			\Default Work Unit\Pistol\Pistol_Reload	
 	1513352309	Enemy_Growl			\Default Work Unit\Enemy\Enemy_Growl	
 	1866025847	Footstep			\Default Work Unit\Footstep	
+	2383429734	Ambience_Loop			\Default Work Unit\Music\Ambience_Loop	
 	3439186225	Player_Breathing			\Default Work Unit\Player\Player_Breathing	
 	3481974498	Pistol_Empty			\Default Work Unit\Pistol\Pistol_Empty	
 	3588687593	Portal_Shatter			\Default Work Unit\Portal_Shatter	
@@ -31,6 +32,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	161862593	Stone Walk 8	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 8_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 8		73552
 	182919169	Pistol_Reload	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Gun Reload _10C4C929.wem		\Actor-Mixer Hierarchy\Pistol\Pistol_Reload		223144
 	198949424	Water Run 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Puddle Run 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Water\Water Run 5		51508
+	214191590	Ambience_Loop	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Ambience_Soft_10C4C929.wem		\Actor-Mixer Hierarchy\Ambience\Ambience_Loop		22760192
 	216726931	Stone Run 4	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Run 4_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Run\Stone\Stone Run 4		53344
 	217746939	Creature Growl 3	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Creature Growl 3_10C4C929.wem		\Actor-Mixer Hierarchy\Enemy\Enemy_Growl\Creature Growl 3		721100
 	227760337	Stone Walk 5	Y:\Documents\GitHub\Applesauce-WWise\.cache\Windows\SFX\Stone Walk 5_10C4C929.wem		\Actor-Mixer Hierarchy\Footsteps\Speed\Walk\Stone\Stone Walk 5		45996
