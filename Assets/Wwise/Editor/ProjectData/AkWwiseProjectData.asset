@@ -167,7 +167,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit/Pistol
     guid: fe178e8a7e2b5e489ab56457729cbfa0
     GuidInternal: 
-    m_lastTime: -8585895349904775808
+    m_lastTime: -8585895328564775808
     List:
     - name: Pistol_Empty
       guid: adfd05a8ecb3014f878be8d0f279f327
@@ -209,8 +209,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/Pistol/Pistol_Reload
       maxAttenuation: 0
-      maxDuration: 1.364626
-      minDuration: 1.364626
+      maxDuration: 1.464626
+      minDuration: 1.464626
   - PhysicalPath: Events/Player.wwu
     PathAndIcons:
     - ElementName: Default Work Unit

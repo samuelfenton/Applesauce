@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         FindObjectOfType<PortalController>().InitPortalController();
 
         m_characterEnemy = FindObjectOfType<Character_Enemy>();
