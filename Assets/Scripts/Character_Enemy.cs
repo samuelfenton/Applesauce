@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Character_Enemy : Character
 {
+    public const string SPIN_STRING = "Spin180";
+    public const string RUN_STRING = "Run";
+    public const string IDLE_STRING = "Idle";
+
+
+    private enum ENEMY_STATE {IDLE, AWAKING, CHASING }
+    private ENEMY_STATE m_currentState = ENEMY_STATE.IDLE;
+
     private Character_Player m_playerTarget = null;
 
     private Room m_pathfindingRoom = null;
@@ -22,6 +30,8 @@ public class Character_Enemy : Character
         SetCurrentRoom(null, m_currentRoom);
 
         m_playerTarget = FindObjectOfType<Character_Player>();
+
+        m_currentState = ENEMY_STATE.IDLE;
     }
 
     /// <summary>
@@ -31,33 +41,21 @@ public class Character_Enemy : Character
     {
         base.Update();
 
-        if(SameRoomAsPlayer()) //Same room, move towards
+        switch (m_currentState)
         {
-            RotateTowards(m_playerTarget.transform.position);
+            case ENEMY_STATE.IDLE:
+                UpdateIdleState();
+                break;
+            case ENEMY_STATE.AWAKING:
+                UpdateAwakingState();
+                break;
+            case ENEMY_STATE.CHASING:
+                UpdateChasingState();
+                break;
+            default:
+                    break;
+        }
 
-            MoveTowards(m_playerTarget.transform.position);
-        }
-        else
-        {
-            if (m_pathfindingPortal == null)
-            {
-                m_pathfindingPortal = GetTraversalToPlayerPortal();
-                m_pathfindingRoom = m_playerTarget.m_currentRoom;
-            }
-            else //Has target portal move towards
-            {
-                if(m_playerTarget.m_currentRoom != m_pathfindingRoom)//Player has moved to new room, find new portal when possible
-                {
-                    m_pathfindingPortal = GetTraversalToPlayerPortal();
-                    m_pathfindingRoom = m_playerTarget.m_currentRoom;
-                }
-                else
-                {
-                    RotateTowards(m_pathfindingPortal.transform.position);
-                    MoveTowards(m_pathfindingPortal.transform.position);
-                }
-            }
-        }
     }
 
     /// <summary>
@@ -109,5 +107,64 @@ public class Character_Enemy : Character
         float percentForwards = Vector3.Dot(toTarget, transform.forward);
 
         m_entityPhysics.SetVelocity(m_forwardSpeed * transform.forward * Mathf.Clamp(percentForwards, 0.2f, 1.0f));
+    }
+
+    private void UpdateIdleState()
+    {
+        if (SameRoomAsPlayer())
+        {
+            m_currentState = ENEMY_STATE.AWAKING;
+            PlayAnimation(SPIN_STRING);
+
+            Vector3 up = transform.up;
+            transform.LookAt(m_playerTarget.transform.position, up);
+        }
+    }
+
+    private void UpdateAwakingState()
+    {
+        if(IsAnimationDone())
+        {
+            m_currentState = ENEMY_STATE.CHASING;
+            PlayAnimation(RUN_STRING);
+        }
+    }
+
+    private void UpdateChasingState()
+    {
+        if (SameRoomAsPlayer()) //Same room, move towards
+        {
+            RotateTowards(m_playerTarget.transform.position);
+
+            MoveTowards(m_playerTarget.transform.position);
+        }
+        else
+        {
+            if (m_pathfindingPortal == null)
+            {
+                m_pathfindingPortal = GetTraversalToPlayerPortal();
+                m_pathfindingRoom = m_playerTarget.m_currentRoom;
+            }
+            else //Has target portal move towards
+            {
+                if (m_playerTarget.m_currentRoom != m_pathfindingRoom)//Player has moved to new room, find new portal or return to idle
+                {
+                    m_pathfindingPortal = GetTraversalToPlayerPortal();
+                    m_pathfindingRoom = m_playerTarget.m_currentRoom;
+
+                    if(m_pathfindingPortal == null) //Unable to find next room, return to idle
+                    {
+                        m_currentState = ENEMY_STATE.IDLE;
+                        m_pathfindingRoom = null;
+                        PlayAnimation(IDLE_STRING);
+                    }    
+                }
+                else
+                {
+                    RotateTowards(m_pathfindingPortal.transform.position);
+                    MoveTowards(m_pathfindingPortal.transform.position);
+                }
+            }
+        }
     }
 }

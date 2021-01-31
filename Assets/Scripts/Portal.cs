@@ -16,6 +16,8 @@ public class Portal : MonoBehaviour
 
     public Portal m_connectedPortal = null;
 
+    public Material m_onBreakMaterial = null;
+
     private GameObject m_playerObj = null;
     private Camera m_playerCamera = null;
 
@@ -190,7 +192,15 @@ public class Portal : MonoBehaviour
     /// </summary>
     public void BreakPortal()
     {
-        m_animator.Play(BREAK_ANIMATION);
+        //m_animator.Play(BREAK_ANIMATION);
+
+        //Setup material
+        MeshRenderer windowMeshRenderer = m_portalWindow.GetComponent<MeshRenderer>();
+
+        windowMeshRenderer.material = m_onBreakMaterial;
+
         m_portalBrokenFlag = true;
+
+        GetComponent<Collider>().isTrigger = false;
     }
 }

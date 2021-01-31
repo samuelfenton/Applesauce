@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    protected GameController m_gameController = null;
+
     [HideInInspector]
     public EntityPhysics m_entityPhysics = null;
 
@@ -15,6 +17,8 @@ public class Entity : MonoBehaviour
     public virtual void Init()
     {
         m_entityPhysics = gameObject.AddComponent<EntityPhysics>();
+
+        m_gameController = FindObjectOfType<GameController>();
     }
 
     public virtual void Update()

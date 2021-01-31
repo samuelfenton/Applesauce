@@ -90,7 +90,20 @@ public class Character_Player : Character
 
     private void RaytraceBullet()
     {
+        if (Physics.Raycast(transform.position + transform.up * 1.5f + transform.forward * 0.5f, transform.forward, out RaycastHit hit, 100.0f, ~CustomLayers.m_enviromentMask))//Raycast ignore the enviroment layer
+        {
+            Portal portalHit = hit.collider.GetComponent<Portal>();
 
+            if(portalHit != null)
+            {
+                portalHit.BreakPortal();
+
+                if(portalHit.m_connectedPortal != null)
+                {
+                    portalHit.m_connectedPortal.BreakPortal();
+                }
+            }
+        }
     }
 
     public override void SetCurrentRoom(Portal p_entertedIntoPortal, Room p_currentRoom)

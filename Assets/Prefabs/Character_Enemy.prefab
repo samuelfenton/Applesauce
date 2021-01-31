@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4420023308486511503}
   - component: {fileID: 4132871930148984856}
   - component: {fileID: 2844707756949511345}
+  - component: {fileID: 5827131619912392258}
   m_Layer: 0
   m_Name: Character_Enemy
   m_TagString: Untagged
@@ -80,6 +81,25 @@ MonoBehaviour:
   m_currentRoom: {fileID: 0}
   m_forwardSpeed: 10
   m_rotSpeed: 80
+--- !u!95 &5827131619912392258
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6821842009057356884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f23331fcf7a0143c8a769e9c809d67a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4373157131460526566
 PrefabInstance:
   m_ObjectHideFlags: 0

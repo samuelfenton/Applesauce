@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7661672501760988818}
   - component: {fileID: 5288764051093217912}
   - component: {fileID: 6332620945533630136}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 5779891325654540335}
   - component: {fileID: 3530897905371971384}
   - component: {fileID: 1868350416349559940}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 4418492941516621578}
   - component: {fileID: 3402099348630250083}
   - component: {fileID: 2728687654095167366}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,6 +246,7 @@ MonoBehaviour:
   m_portalWindow: {fileID: 5101941607033295565}
   m_portalCamera: {fileID: 7661672501760988818}
   m_connectedPortal: {fileID: 0}
+  m_onBreakMaterial: {fileID: 2100000, guid: 63c5a17bbec1e4c79b5c3a901ac2d172, type: 2}
   m_portalBrokenFlag: 0
 --- !u!65 &2728687654095167366
 BoxCollider:
